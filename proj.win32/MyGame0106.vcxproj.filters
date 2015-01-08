@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tolua">
+      <UniqueIdentifier>{d52d9c15-c7bd-4ef6-99f4-bc9c40eb591f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\GameAppToLua.h">
+      <Filter>tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Client.h" />
+    <ClInclude Include="..\Classes\Typedef.h" />
+    <ClInclude Include="..\Classes\globleDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\GameAppToLua.cpp">
+      <Filter>tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Classes\Client.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GameApp.pkg">
+      <Filter>tolua</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
