@@ -3,8 +3,11 @@
 
 2、引擎里的 CCLuaStack 在调用 lua 函数时不支持传参，需多加个函数 如下
   CCLuaStack.h 
+  
     virtual int executeGlobalFunction(const char* functionName,const std::vector<CCLuaValue>& values)
+  
   CCLuaStack.cpp
+  
     int CCLuaStack::executeGlobalFunction(const char* functionName,const std::vector<CCLuaValue>& values)
     {
     	lua_getfield(m_state, LUA_GLOBALSINDEX,functionName);      /* query function by name, stack: function */
