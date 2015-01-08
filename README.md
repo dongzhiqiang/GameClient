@@ -2,6 +2,8 @@
 1、配置GameApp.pgk的编译时 提示tolua++的路径不对，需要将cocos2dx-2.2.6引擎的cocos2d-x-2.2.6\tools\tolua++目录下的tolua++解压
 
 2、引擎里的 CCLuaStack 在调用 lua 函数时不支持传参，需多加个函数 如下
+
+
   CCLuaStack.h 
   
     virtual int executeGlobalFunction(const char* functionName,const std::vector<CCLuaValue>& values)
