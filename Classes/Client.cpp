@@ -25,6 +25,7 @@ bool Client::LoadGame()
 	
 	CCFileUtils::sharedFileUtils()->addSearchPath("hall/");
 	CCFileUtils::sharedFileUtils()->addSearchPath("moudle/");
+	CCFileUtils::sharedFileUtils()->addSearchPath("common/");
 
 	// register lua engine
 	CCLuaEngine* pEngine = CCLuaEngine::defaultEngine();
@@ -45,6 +46,8 @@ bool Client::LoadGame()
 #endif
 
 	pEngine->executeScriptFile("hall/load.lua");
+
+	pEngine->executeScriptFile("common/Load.lua");
 
 	return true;
 }

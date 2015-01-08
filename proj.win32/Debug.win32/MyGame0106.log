@@ -1,4 +1,4 @@
-﻿生成启动时间为 2015/1/7 18:49:20。
+﻿生成启动时间为 2015/1/8 15:49:18。
      1>项目“F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\MyGame0106.vcxproj”在节点 2 上(Build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug.win32\MyGame0106.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
@@ -18,10 +18,8 @@
          Pattern not replaced	tolua_usertype(tolua_S,"LUA_FUNCTION");
          Pattern not replaced		
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\Classes" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\cocos2dx_support" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\lua" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\tolua" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\src" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\win32" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\external" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\CocosDenshion\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\extensions" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\GameAppToLua.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\Classes" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\cocos2dx_support" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\lua" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\tolua" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\scripting\lua\src" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\win32" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\external" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\CocosDenshion\include" /I"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\extensions" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\GameAppToLua.cpp
          GameAppToLua.cpp
-         AppDelegate.cpp
-         正在生成代码...
        PreLinkEvent:
          if not exist "F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\" mkdir "F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\"
          xcopy /Y /Q "F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\"
@@ -31,6 +29,7 @@
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\MyGame0106.exe" /INCREMENTAL /NOLOGO /LIBPATH:"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\\" libcocos2d.lib libExtensions.lib opengl32.lib glew32.lib libBox2d.lib libchipmunk.lib libCocosDenshion.lib liblua.lib lua51.lib websockets.lib pthreadVCE2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\MyGame0106.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\MyGame0106.lib" /MACHINE:X86 Debug.win32\AppDelegate.obj
          Debug.win32\Client.obj
          Debug.win32\GameAppToLua.obj
+         Debug.win32\LuaAPI.obj
          Debug.win32\main.obj
          MyGame0106.vcxproj -> F:\cocos2d-x-2.2.6\projects\MyGame0106\proj.win32\Debug.win32\MyGame0106.exe
        FinalizeBuildStatus:
@@ -40,4 +39,4 @@
 
 生成成功。
 
-已用时间 00:00:08.64
+已用时间 00:00:05.18

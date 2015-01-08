@@ -172,6 +172,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\Client.h" />
     <ClInclude Include="..\Classes\GameAppToLua.h" />
     <ClInclude Include="..\Classes\globleDef.h" />
+    <ClInclude Include="..\Classes\LuaAPI.h" />
     <ClInclude Include="..\Classes\Typedef.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
@@ -179,6 +180,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Client.cpp" />
     <ClCompile Include="..\Classes\GameAppToLua.cpp" />
+    <ClCompile Include="..\Classes\LuaAPI.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -14,6 +14,9 @@
     <ClInclude Include="..\Classes\Client.h" />
     <ClInclude Include="..\Classes\Typedef.h" />
     <ClInclude Include="..\Classes\globleDef.h" />
+    <ClInclude Include="..\Classes\LuaAPI.h">
+      <Filter>tolua</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\GameAppToLua.cpp">
@@ -22,6 +25,9 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="..\Classes\Client.cpp" />
+    <ClCompile Include="..\Classes\LuaAPI.cpp">
+      <Filter>tolua</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="GameApp.pkg">

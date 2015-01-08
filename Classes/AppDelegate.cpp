@@ -23,6 +23,41 @@ AppDelegate::~AppDelegate()
     SimpleAudioEngine::end();
 }
 
+#ifdef WIN32
+void myGameKeyHook( UINT message,WPARAM wParam,LPARAM lParam )
+{
+	switch( message )
+	{
+	case WM_CHAR:
+		{
+		}
+		break;
+	case WM_KEYDOWN:
+	case WM_KEYUP:
+		{
+			if (message == WM_KEYDOWN &&(lParam & 0x40000000))
+			{
+				break;
+			}
+
+			CCLuaEngine* pEngine = CCLuaEngine::defaultEngine();
+			CCLuaStack* pStack = pEngine->getLuaStack();
+			if (pStack)
+			{
+				std::vector<CCLuaValue> values;
+				values.push_back(CCLuaValue::intValue(message));//±íÃ÷ÊÇkeydown
+				values.push_back(CCLuaValue::intValue(wParam));
+				values.push_back(CCLuaValue::intValue(lParam));
+				pStack->executeGlobalFunction("RefreshScript",values);
+			}
+		}
+		break;
+	default:
+		break;
+	}
+}
+#endif
+
 bool AppDelegate::applicationDidFinishLaunching()
 {
     // initialize director
@@ -38,6 +73,11 @@ bool AppDelegate::applicationDidFinishLaunching()
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY)
     CCFileUtils::sharedFileUtils()->addSearchPath("script");
 #endif
+
+#ifdef WIN32
+	CCEGLView::sharedOpenGLView()->setAccelerometerKeyHook( &myGameKeyHook );
+#endif // WIN32
+
 
     //std::string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("hello.lua");
     //pEngine->executeScriptFile(path.c_str());

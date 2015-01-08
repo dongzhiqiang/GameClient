@@ -1,6 +1,6 @@
 /*
 ** Lua binding: GameApp
-** Generated automatically by tolua++-1.0.92 on 01/07/15 18:49:20.
+** Generated automatically by tolua++-1.0.92 on 01/08/15 15:49:19.
 */
 
 extern "C" {
@@ -24,6 +24,7 @@ TOLUA_API int  tolua_GameApp_open (lua_State* tolua_S);
 #include "../Classes/globleDef.h"
 #include "../Classes/Typedef.h"
 #include "../Classes/Client.h"
+#include "../Classes/LuaAPI.h"
 
 /* function to register type */
 static void tolua_reg_types (lua_State* tolua_S)
@@ -126,6 +127,35 @@ static int tolua_GameApp_Client_SetCurScene00(lua_State* tolua_S)
 }
 #endif //#ifndef TOLUA_DISABLE
 
+/* function: api_load_file */
+#ifndef TOLUA_DISABLE_tolua_GameApp_api_load_file00
+static int tolua_GameApp_api_load_file00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+     !tolua_isstring(tolua_S,1,0,&tolua_err) ||
+     !tolua_isnoobj(tolua_S,2,&tolua_err)
+ )
+  goto tolua_lerror;
+ else
+#endif
+ {
+  const char* file = ((const char*)  tolua_tostring(tolua_S,1,0));
+  {
+   int tolua_ret = (int)  api_load_file(file);
+   tolua_pushnumber(tolua_S,(lua_Number)tolua_ret);
+  }
+ }
+ return 1;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'api_load_file'.",&tolua_err);
+ return 0;
+#endif
+}
+#endif //#ifndef TOLUA_DISABLE
+
 /* Open function */
 TOLUA_API int tolua_GameApp_open (lua_State* tolua_S)
 {
@@ -139,6 +169,7 @@ TOLUA_API int tolua_GameApp_open (lua_State* tolua_S)
    tolua_function(tolua_S,"GetCurScene",tolua_GameApp_Client_GetCurScene00);
    tolua_function(tolua_S,"SetCurScene",tolua_GameApp_Client_SetCurScene00);
   tolua_endmodule(tolua_S);
+  tolua_function(tolua_S,"api_load_file",tolua_GameApp_api_load_file00);
  tolua_endmodule(tolua_S);
  return 1;
 }
