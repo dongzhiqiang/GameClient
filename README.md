@@ -47,3 +47,30 @@
         
         return ret;
     }
+
+3、github 上传时会遇到些问题 修改配置 C:\Program Files (x86)\Git\etc\gitconfig 在 [core] 里 加 compression = -1
+    上传文件会限制大小，太大上传不了 修改配置 在 [http] 里 加 postBuffer = 524288000
+    
+      [core]
+      	symlinks = false
+      	autocrlf = true
+      	compression = -1
+      [color]
+      	diff = auto
+      	status = auto
+      	branch = auto
+      	interactive = true
+      [pack]
+      	packSizeLimit = 2g
+      [help]
+      	format = html
+      [http]
+      	sslCAinfo = /bin/curl-ca-bundle.crt
+      	postBuffer = 524288000
+      [sendemail]
+      	smtpserver = /bin/msmtp.exe
+      
+      [diff "astextplain"]
+      	textconv = astextplain
+      [rebase]
+      	autosquash = true
