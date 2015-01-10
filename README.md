@@ -75,3 +75,9 @@
       [rebase]
       	autosquash = true
 
+4、配置eclipse环境
+    在eclipse导入此项目，由于是lua工程，虽然eclipse里安装了adt，但检测不出 C/C++ Build 的选项
+    需先将项目转化为C++工程，在 File -> New -> Other -> 选C++的项目
+    转化完需要配置C++build选项 将Use default build command 选项勾去掉
+    Build command 改为 bash ${ProjDirPath}/build_native.sh,  Build location 改为 ${ProjDirPath}
+    
