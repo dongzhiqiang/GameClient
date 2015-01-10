@@ -74,3 +74,4 @@
       	textconv = astextplain
       [rebase]
       	autosquash = true
+
